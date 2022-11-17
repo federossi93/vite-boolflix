@@ -13,28 +13,29 @@ export default {
     };
   },
   methods: {
-    callApi() {
+    callApiFilm() {
       axios(state.config)
         .then(response => {
           console.log(response.data);
           this.state.resultSerch = response.data;
         });
-    }
+    },
   },
   components: {
     SearchBox,
     AppCard
-}
+  }
+
 }
 
 </script>
 
 
 <template>
-  
-<header>
-  <SearchBox @performSearch="callApi"/>
-</header>
+
+  <header>
+    <SearchBox @performSearch="callApiFilm" />
+  </header>
 
   <main>
     <AppCard />

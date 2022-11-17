@@ -19,6 +19,8 @@ export default{
       <div class="row row-cols-4">
         <div class="col my-4" v-for="movie in state.resultSerch.results">
           <div class="card">
+            <img :src="state.image + movie.poster_path" alt="">
+            <div></div>
             <div>{{ movie.title }}</div>
             <div>{{ movie.original_title }}</div>
             <div v-if="movie.original_language === 'en'">Lenguage: <span class="text-primary">En</span></div>

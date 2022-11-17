@@ -7,19 +7,30 @@ export default {
 
     data() {
         return {
-            state
+            state,
+            
         }
-    }
+    },
+    methods:{
+        
+    },
+    
 }
-
 </script>
 
 <template>
 
-        <div class="container-fluid bg-dark d-flex align-items-center py-2">
+        <div class="container-fluid bg-dark d-flex justify-content-evenly align-items-center py-2">
 
             <div>
                 <h1 class="text-uppercase text-danger">boolfix</h1>
+            </div>
+
+            <div>
+                <ul class="text-light">
+                    <li><a  href="#" @click="" >Movie</a></li>
+                    <li><a href="#" @click="" >Tv Show</a></li>
+                </ul>
             </div>
 
             <div>
